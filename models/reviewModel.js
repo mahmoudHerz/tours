@@ -68,7 +68,6 @@ reviewShcema.post('save', function () {
 // update and delete review
 reviewShcema.post(/^findOneAnd/, async (doc) => {
   await doc.constructor.calcAverageRatings(doc.tour);
-  console.log(doc);
 });
 
 const Review = mongoose.model('Review', reviewShcema);
