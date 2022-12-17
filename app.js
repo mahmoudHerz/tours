@@ -22,6 +22,7 @@ app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 
 // GLOBAL MIDDELWARES
+
 // Serving static files
 app.use(express.static(path.join(__dirname, 'public')));
 
